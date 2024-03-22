@@ -1,0 +1,13 @@
+{
+  "name": "alpha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./global.css -o ./css/styles.css --watch",
+    "build": "npx tailwindcss -i ./global.css -o ./css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
