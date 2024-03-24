@@ -1,19 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Alpha - Contato</title>
 </head>
 
 <body>
-  aaaaaaaaaaaaa
+  <div class="w-full h-screen flex flex-col items-center gap-14 mx-auto text-sambucus">
+    <header class="py-4 bg-black flex justify-center items-center    w-full">
+      <div class="container flex gap-14 items-center px-12 w-full">
+        <div class="overflow-hidden">
+          <a href="/">
+            <img src="./images/Logo.svg" alt="Logo empresa Alpha" width="150px"
+              class="hover:scale-105 cursor-pointer transition-all duration-700" />
+          </a>
+        </div>
+        <nav>
+          <ul class="flex gap-10 font-bold text-white">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html">Produtos</a></li>
+            <li><a href="/">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container mx-auto px-12">
+      <h1 class="font-company text-black text-5xl mb-6">Nosso contato</h1>
+      <section class="grid grid-cols-2">
+        <div class="bg-black text-[#E9E41D] py-16 px-8">
+          <h2 class="font-company text-4xl mb-6">Alpha</h2>
+          <div class="flex gap-8 flex-col">
+            <div class="flex items-start gap-4">
+              <img src="/images/MapPin.svg" alt="">
+              <p>Rua Ali Perto, 35<br>
+                São Paulo - SP<br>
+                Brasil - Terra - Vita Láctea</p>
+            </div>
+            <div class="flex items-start gap-4">
+              <img src="/images/EnvelopeSimple.svg" alt="">
+              <p>contato@alpha.com<br>
+                assistencia@alpha.com</p>
+            </div>
+            <div class="flex items-start gap-4">
+              <img src="/images/Phone.svg" alt="">
+              <p>+55 11 9999-9999</p>
+            </div>
+          </div>
+        </div>
+        <form class="py-16 px-8 w-full flex flex-col justify-between" action="">
+          <fieldset class="flex flex-col w-full gap-5">
+            <div class="flex flex-col">
+              <label for="nome">Nome</label>
+              <input class="mt-1 p-2 border border-[#ededed] rounded-sm w-full" type="text" id="nome"
+                placeholder="Como prefere ser chamado">
+            </div>
+            <div class="flex flex-col"> <label for="telefone">Telefone</label>
+              <input class="mt-1 p-2 border border-[#ededed] rounded-sm w-full" type="text" id="telefone"
+                placeholder="Digite seu número de telefone">
+            </div>
+            <div class="flex flex-col">
+              <label for="email">E-mail</label>
+              <input class="mt-1 p-2 border border-[#ededed] rounded-sm w-full" type="email" id="email"
+                placeholder="Digite seu e-mail">
+            </div>
+            <div class="flex flex-col">
+              <label for="message">Mensagem</label>
+              <textarea class="mt-1 p-3 border border-[#ededed] rounded-sm w-full" name="message" id="message" rows="5"
+                placeholder="O que você precisa?"></textarea>
+            </div>
+          </fieldset>
+          <button
+            class="bg-[#E9E41D] font-bold w-full p-3 mt-8 rounded-sm hover:opacity-85 cursor-pointer transition-all duration-700">ENVIAR</button>
+        </form>
+      </section>
+    </main>
+    <footer class="container mx-auto w-full flex justify-center gap-16  px-12 py-12">
+      <div class="flex flex-col gap-6">
+        <span class="text-base opacity-70 font-company">A Alpha</span>
+        <ul class="flex flex-col gap-3">
+          <li><a href="/">História</a>
+          <li><a href="/">Trabalhe Conosco</a>
+          <li><a href="/">Seja um fornecedor</a>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-6">
+        <span class="text-base opacity-70 font-company">Dúvidas</span>
+        <ul class="flex flex-col gap-3">
+          <li><a href="/">Política de troca</a>
+          </li>
+          <li><a href="/">Política de entrega</a>
+          </li>
+          <li><a href="/">Política de Cookies</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-6">
+        <span class="text-base opacity-70 font-company">Atendimento</span>
+        <ul class="flex flex-col gap-3">
+          <li><a href="/contact.html">Fale conosco</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
